@@ -1,0 +1,19 @@
+編集メモ
+OPENAI_API_KEY	Secret
+LINEWORKS_BOT_SECRET	Secret
+LINEWORKS_CLIENT_SECRET	Secret
+LINEWORKS_PRIVATE_KEY	Secret
+LINEWORKS_BOT_ID	Text
+LINEWORKS_CLIENT_ID	Text
+LINEWORKS_SERVICE_ACCOUNT	Text
+OPENAI_MODEL	Text（gpt-4.1-mini）
+HISTORY_TURNS	Text（10）
+HISTORY_TTL_DAYS	Text（7）
+
+. 確認
+
+ブラウザで https://<worker名>.<サブドメイン>.workers.dev/ を開きます。"status": "ok" かつ missingPrompts が空なら設定完了です。
+
+5. LINE WORKS側
+
+Developer Console のBot設定で、Callback URL に https://<worker名>.<サブドメイン>.workers.dev/callback を登録。末尾の /callback を忘れずに。
